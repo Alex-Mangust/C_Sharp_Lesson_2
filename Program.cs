@@ -5,12 +5,9 @@
     if(arg3>result) result = arg3;
     return result;
 }
-int a1 = 15, b1 = 21, c1 = 39, a2 = 12, b2 = 2311, c2 = 33, 
-a3 = 13, b3 = 23111, c3 = 313;
+int [] array = {11, 211, 31, 41, 15, 61, 17, 18, 19};
 
-// int max1 = Max(a1, b1, c1);
-// int max2 = Max(a2, b2, c2);
-// int max3 = Max(a3, b3, c3);
-// int max = Max(max1, max2, max3);
-int max = Max(Max(a1, b1, c1), Max(a2, b2, c2), Max(a3, b3, c3));
+int max = Max(Max(array[0], array[1], array[2]),
+Max(array[3], array[4], array[5]),
+Max(array[6], array[7], array[8]));
 Console.WriteLine(max);
